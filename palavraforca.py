@@ -1,0 +1,2 @@
+palavra = 'yellowjackets'
+dica = 'serie'
