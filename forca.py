@@ -23,7 +23,7 @@ print('Caso a letra corresponda, será inserida na palavra')
 print('Caso contrário, perderá uma chance')
 print('* As palavras podem conter acentos e espaços.')
 print(' BOM JOGO! ')
-print('=#' * 32)
+print('=#' * 35)
 
 
 while True:
