@@ -17,6 +17,14 @@ print('=#' * 25)
 print('=#' * 9 + ' JOGO DA FORCA ' + '=#' * 9)
 print('=#' * 25)
 print(' ')
+print(' ### COMO JOGAR ### ')
+print('Digite uma letra para checar se está na palavra')
+print('Caso a letra corresponda, será inserida na palavra')
+print('Caso contrário, perderá uma chance')
+print('* As palavras podem conter acentos e espaços.')
+print(' BOM JOGO! ')
+print('=#' * 32)
+
 
 while True:
     for letra in palavra:
@@ -24,7 +32,7 @@ while True:
             print(letra, end=' ')
         else:
             print('_', end=' ')
-    print(f' - você tem {chances} chances. DICA: CIDADE BRASILEIRA')
+    print(f' - você tem {chances} chances. DICA: PALAVRAS EM PORTUGUÊS.')
     print(' ')
     print(f'Letras chutadas: {letras_usuario}')
     print(' ')
