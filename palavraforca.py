@@ -1,2 +1,1 @@
-palavra = 'yellowjackets'
-dica = 'serie'
+palavra = ["São Paulo", "Rio de Janeiro", "Brasília", "Salvador", "Fortaleza", "Belo Horizonte", "Manaus", "Curitiba", "Recife", "Porto Alegre", "Belém", "Goiânia", "Guarulhos", "Campinas", "São Luís", "São Gonçalo", "Maceió", "Duque de Caxias", "Teresina", "Natal", "Osasco", "Campo Grande", "Santo André", "João Pessoa", "Jaboatão dos Guararapes"]
