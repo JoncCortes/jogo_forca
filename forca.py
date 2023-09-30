@@ -1,4 +1,3 @@
-from palavraforca import palavra
 import random
 import sys
 import os
@@ -6,24 +5,46 @@ import os
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
-    os.system('clear')
+
+def textosIniciais():
+    print('=#' * 25)
+    print('=#' * 9 + ' JOGO DA FORCA ' + '=#' * 9)
+    print('=#' * 25)
+    print(' ')
+    print(' ### COMO JOGAR ### ')
+    print('Digite uma letra para checar se está na palavra')
+    print('Caso a letra corresponda, será inserida na palavra')
+    print('Caso contrário, perderá uma chance')
+    print('* As palavras podem conter acentos e espaços.')
+    print(' ')
+    print('=#' * 25)
+    print('=#' * 5 + ' Criado por JONAS CORTES © 2023 ' + '=#' * 5)
+    print('=#' * 25)
+    print(' ')
+    print(' BOM JOGO! ')
+    print('=#' * 36)
+    print(' ')
+
+
+palavra = [
+    "casa", "carro", "gato", "cachorro", "futebol", "escola", "amigo", "computador", "trabalho", "cidade",
+    "verão", "inverno", "primavera", "outono", "música", "filme", "livro", "jardim", "praia", "montanha",
+    "viagem", "restaurante", "café", "família", "amor", "vida", "tempo", "dia", "noite", "lua", "sol",
+    "chuva", "arco-íris", "vento", "mar", "rio", "ponte", "caminho", "porta", "janela", "espelho", "relógio",
+    "telefone", "fotografia", "arte", "pintura", "escultura", "cor", "azul", "vermelho", "verde", "amarelo",
+"laranja", "rosa", "roxo", "branco", "preto", "bola", "bicicleta", "tênis", "sapato", "camisa", "calça",
+"chapéu", "óculos", "mochila", "cachecol", "frio", "calor", "alegria", "tristeza", "medo", "surpresa",
+    "sonho", "esperança", "sorriso", "riso", "abraço", "beijo", "lágrima", "saúde", "doença", "fome", "sede",
+"amizade", "companheiro", "coração", "pensamento", "palavra", "frase", "silêncio", "natureza", "planeta",
+    "universo", "ciência", "tecnologia", "felicidade", "desafio", "conquista", "vitória", "derrota", "aprendizado",
+]
 
 palavra = random.choice(palavra)
 letras_usuario = []
 chances = 5
 ganhou = False
 
-print('=#' * 25)
-print('=#' * 9 + ' JOGO DA FORCA ' + '=#' * 9)
-print('=#' * 25)
-print(' ')
-print(' ### COMO JOGAR ### ')
-print('Digite uma letra para checar se está na palavra')
-print('Caso a letra corresponda, será inserida na palavra')
-print('Caso contrário, perderá uma chance')
-print('* As palavras podem conter acentos e espaços.')
-print(' BOM JOGO! ')
-print('=#' * 35)
+textosIniciais()
 
 
 while True:
@@ -65,8 +86,7 @@ else:
     res = int(input('''Deseja Reiniciar o jogo?
         [ 1 ] = SIM
         [ 2 ] = NÂO
-        SUA RESPOSTA: j
-        '''))
+        SUA RESPOSTA: '''))
     if res == 1:
         restart_program()
     if res == 2:
